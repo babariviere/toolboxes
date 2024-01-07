@@ -1,0 +1,8 @@
+brew "aerc"
+brew "broot"
+brew "carapace"
+brew "editorconfig"
+brew "fzf"
+brew "gh"
+brew "sad"
+brew "tealdeer"

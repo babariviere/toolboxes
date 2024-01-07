@@ -1,0 +1,9 @@
+[Unit]
+Description=azure-CLI, a wolfi container to provide you your brew
+Wants=azure-cli-Cellar
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/distrobox assemble create --replace -f /etc/distrobox/distrobox.ini -n azure-cli
+ExecStart=/usr/bin/distrobox enter azure-cli
+RemainAfterExit=true
